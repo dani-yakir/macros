@@ -1,0 +1,45 @@
+--- Personal data ---
+Height: 185cm
+Age: 28
+Gender: Male
+Activity level: Weightlifting 4 days a week
+Current goal: Long bulk period (started Jan 2026)
+
+--- Bulk Phase Progress ---
+Phase 1 (Jan 1 - Feb 2): 2,500 kcal target
+- Weight progression: 72.7 kg → 73.5 kg (first 2 weeks) → stable at 73.4-73.5 kg
+- Analysis: Initial glycogen/water gain, then plateau for 3 weeks
+- Conclusion: Eating at/near maintenance, TDEE estimated ~2,600-2,650 kcal
+
+Phase 2 (Feb 3 onwards): 2,700 kcal target
+- Target macros: 330-340C / 180-190P / 65-70F / 2,700 kcal
+- Goal: 0.2-0.3 kg/week gain rate
+- Next review: After 2-3 weeks to assess if increase to 2,800 kcal needed
+--- Untracked Food Notes ---
+Jan 14, 2026: Ate 2 small mini-burgers at company happy hour (not tracked in daily CSV)
+
+Jan 15, 2026: Work travel day - no CSV tracking, manual estimation
+BREAKFAST:
+- 2 eggs: 1C/17P/13F/194 kcal
+- 150g sourdough bread: 75C/11P/2F/360 kcal
+- 200g tomato+cucumber: 7C/2P/0F/35 kcal
+- 5g olive oil: 0C/0P/5F/42 kcal
+- 10g Bulgarian cheese (feta): 0C/1P/2F/26 kcal
+- 10g avocado: 1C/0P/1F/16 kcal
+- 10g tuna: 0C/3P/0F/12 kcal
+Subtotal: 84C/34P/23F/685 kcal
+
+LUNCH:
+- 300g sinta steak (סינטה - lean beef): 0C/66P/15F/420 kcal
+- 250ml bean soup: 20C/8P/3F/135 kcal
+- 300g potatoes (2 medium): 60C/6P/0F/260 kcal
+Subtotal: 80C/80P/18F/815 kcal
+
+DINNER:
+- 200g gnocchi: 50C/8P/3F/250 kcal
+- 100g salmon: 0C/20P/12F/180 kcal
+- 1 cup hot chocolate: 25C/8P/8F/200 kcal
+Subtotal: 75C/36P/23F/630 kcal
+
+DAILY TOTAL: 239C/150P/64F/2,130 kcal
+vs. Target (300C/180P/65F/2,505 kcal): -61C/-30P/-1F/-375 kcal
