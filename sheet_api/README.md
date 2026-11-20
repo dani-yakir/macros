@@ -22,8 +22,9 @@ Claude (or anything holding the token) list and add rows to the `dict` tab.
    - Authorize when prompted (Google shows an "unverified app" warning for your own
      script — Advanced → Go to project).
    - Copy the **Web app URL** (ends in `/exec`).
-5. **Give the URL + token to Claude Code remote sessions** — in the cloud environment
-   settings for this repo, add environment variables:
+5. **Give the URL + token to the client.** For Remote Control (session on your own PC), put
+   both `KEY=value` lines in `sheet_api/.env` (gitignored). For cloud sessions, instead add them as
+   environment variables in the cloud environment settings:
    ```
    MACROS_SHEET_URL=https://script.google.com/macros/s/XXXX/exec
    MACROS_SHEET_TOKEN=<the token>

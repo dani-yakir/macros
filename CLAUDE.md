@@ -7,7 +7,8 @@ produced by `export_snapshots.py`, so they may be stale. Never treat them as the
 ## Adding a food from a label photo
 
 When the user sends a photo of a nutrition label (usually Hebrew), add it to the live `dict`
-tab via `sheet_api/dict_api.py` (needs env `MACROS_SHEET_URL` / `MACROS_SHEET_TOKEN`;
+tab via `sheet_api/dict_api.py` (reads `MACROS_SHEET_URL` / `MACROS_SHEET_TOKEN` from
+`sheet_api/.env` or env vars;
 setup in `sheet_api/README.md`).
 
 `dict` columns: `אוכל` (name) | `יחידה` (unit) | `פחמימה` carbs g | `חלבון` protein g |

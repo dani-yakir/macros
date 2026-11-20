@@ -1,7 +1,7 @@
 """
 CLI client for the macros 'dict' sheet Apps Script web app (stdlib only).
 
-Requires env vars:
+Requires (as env vars, or KEY=value lines in sheet_api/.env, which is gitignored):
   MACROS_SHEET_URL    the web app /exec URL
   MACROS_SHEET_TOKEN  the TOKEN script property
 
@@ -17,6 +17,22 @@ import sys
 import urllib.request
 
 sys.stdout.reconfigure(encoding='utf-8')
+
+
+def load_env_file():
+    """Load KEY=value lines from sheet_api/.env (gitignored) without overriding real env vars."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
+    if not os.path.exists(path):
+        return
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith('#') and '=' in line:
+                k, v = line.split('=', 1)
+                os.environ.setdefault(k.strip(), v.strip())
+
+
+load_env_file()
 
 
 def call(payload):
