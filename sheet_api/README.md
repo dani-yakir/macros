@@ -48,11 +48,15 @@ version → Deploy**. This keeps the same URL. ("New deployment" would create a 
 
 ## What it does
 
-- `list` — returns all `dict` rows (name, unit, carbs, protein, fat, calories).
-- `upsert` — appends a new row (columns A–F) and writes the validation formula
-  `=4*C{r} + 4*D{r} + 9*E{r}` in column G. If the name already exists, it refuses
-  with `error: exists` unless `overwrite: true`, in which case it updates B–F in place.
-  Names must be unique and exact, because the `food` tab looks them up with `VLOOKUP`.
+A general editor for every tab, with columns addressed by row-1 header name (see the
+header comment in `Code.gs` and the docstring in `dict_api.py`):
+`tabs`, `read`, `set`, `append`, `delete_rows`, `add_column` (always at the end),
+`rename_column`. Formulas may use `{row}` and `{col:<header>}` placeholders. Every write
+returns the previous contents of what it changed.
+
+`dict_api.py` adds `dict` shortcuts: `list` and `add`. `add` refuses duplicate names
+unless `--overwrite`, writes the validation formula, and fills `סיבים` (fiber) if that
+column exists. Names must be unique and exact, because the `food` tab looks them up with `VLOOKUP`.
 
 ## Rotating the token
 
